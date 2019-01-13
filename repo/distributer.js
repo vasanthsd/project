@@ -24,7 +24,7 @@ let routes = function (Distributor) {
         }
         )
 
-    distRouter.route('/:id')
+    distributorRouter.route('/:id')
         .get(function (req, res) {
             var query = req.query;
             var id = req.params.id;
@@ -74,7 +74,7 @@ let routes = function (Distributor) {
             })
         })
 
-    return distRouter;
+    return distributorRouter;
 
 }
 
